@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 import '../../models/user.dart';
-import './authentication_repository.dart';
+import '../../repository/authentication_repository.dart';
 
 class AuthenticationState extends Equatable {
   const AuthenticationState._({

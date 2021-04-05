@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../bloc/authentication/authentication.dart';
-import '../bloc/user/user.dart';
 import '../widgets/splash_page.dart';
 import '../screens/login_page/login_page.dart';
 import '../screens/home_page/home_page.dart';
+import '../repository/authentication_repository.dart';
+import '../repository/user_repository.dart';
 
 class App extends StatelessWidget {
   final AuthenticationRepository authenticationRepository;

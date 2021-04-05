@@ -4,8 +4,8 @@ import 'dart:async';
 
 import './authentication_event.dart';
 import './authentication_state.dart';
-import './authentication_repository.dart';
-import '../user/user_repository.dart';
+import '../../repository/authentication_repository.dart';
+import '../../repository/user_repository.dart';
 import '../../models/user.dart';
 
 class AuthenticationBloc

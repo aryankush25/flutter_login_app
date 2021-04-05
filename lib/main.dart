@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'screens/app.dart';
-import './bloc/authentication/authentication.dart';
-import './bloc/user/user.dart';
+import './screens/app.dart';
+import './repository/authentication_repository.dart';
+import './repository/user_repository.dart';
 
 void main() {
   runApp(App(

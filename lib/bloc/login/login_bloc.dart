@@ -5,9 +5,9 @@ import 'package:formz/formz.dart';
 
 import './login_event.dart';
 import './login_state.dart';
-import '../authentication/authentication.dart';
 import '../../widgets/password.dart';
 import '../../widgets/username.dart';
+import '../../repository/authentication_repository.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   final AuthenticationRepository _authenticationRepository;
