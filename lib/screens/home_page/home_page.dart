@@ -4,10 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/authentication/authentication.dart';
 
 class HomePage extends StatelessWidget {
-  static Route route() {
-    return MaterialPageRoute<void>(builder: (_) => HomePage());
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

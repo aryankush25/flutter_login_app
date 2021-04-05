@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
 
-import '../../repository/authentication_repository.dart';
+import './authentication_state.dart';
+import '../../models/user.dart';
 
 abstract class AuthenticationEvent extends Equatable {
   const AuthenticationEvent();
@@ -10,12 +11,16 @@ abstract class AuthenticationEvent extends Equatable {
 }
 
 class AuthenticationStatusChanged extends AuthenticationEvent {
-  const AuthenticationStatusChanged(this.status);
-
   final AuthenticationStatus status;
+  final User user;
+
+  const AuthenticationStatusChanged({
+    this.status,
+    this.user,
+  });
 
   @override
-  List<Object> get props => [status];
+  List<Object> get props => [status, user];
 }
 
 class AuthenticationLogoutRequested extends AuthenticationEvent {}
