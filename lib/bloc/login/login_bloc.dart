@@ -69,16 +69,12 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
           password: state.password.value,
         );
 
-        print(user.name);
-
         yield state.copyWith(status: FormzStatus.submissionSuccess);
 
         _authenticationBloc.add(AuthenticationStatusChanged(
           status: AuthenticationStatus.authenticated,
           user: user,
         ));
-
-        print(_authenticationBloc.state);
       } on Exception catch (error) {
         print('Fail $error');
 
