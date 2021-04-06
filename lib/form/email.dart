@@ -3,7 +3,7 @@ import 'package:formz/formz.dart';
 enum EmailValidationError { empty }
 
 class Email extends FormzInput<String, EmailValidationError> {
-  const Email.pure() : super.pure('aryankush025@gmail.com');
+  const Email.pure() : super.pure('');
   const Email.dirty([String value = '']) : super.dirty(value);
 
   @override
