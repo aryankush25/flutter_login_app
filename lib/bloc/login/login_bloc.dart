@@ -4,8 +4,8 @@ import 'package:formz/formz.dart';
 
 import './login_event.dart';
 import './login_state.dart';
-import '../../widgets/password.dart';
-import '../../widgets/email.dart';
+import '../../form/password.dart';
+import '../../form/email.dart';
 import '../../repository/user_repository.dart';
 import '../authentication/authentication.dart';
 import '../../models/user.dart';

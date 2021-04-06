@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
 
-import '../../widgets/password.dart';
-import '../../widgets/email.dart';
+import '../../form/password.dart';
+import '../../form/email.dart';
 
 class LoginState extends Equatable {
   final FormzStatus status;
