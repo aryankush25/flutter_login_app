@@ -14,9 +14,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   final UserRepository _userRepository;
   final AuthenticationBloc _authenticationBloc;
 
-  LoginBloc()
+  LoginBloc({authenticationBloc})
       : _userRepository = UserRepository(),
-        _authenticationBloc = AuthenticationBloc(),
+        _authenticationBloc = authenticationBloc,
         super(const LoginState());
 
   @override
